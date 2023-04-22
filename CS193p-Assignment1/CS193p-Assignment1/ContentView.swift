@@ -13,8 +13,8 @@ struct ContentView: View {
     @State var emojisShown : String = "nature"
     @State var defaultArray : [String] = []
     @State var natureEmoji = ["🐢", "🐍", "🦎", "🦐", "🐡", "🐳", "🐋", "🐠", "🐊", "🐟"]
-    var foodEmoji = ["🍎", "🍌", "🍓", "🍋", "🍍", "🌶️", "🍊", "🫐", "🥦", "🧅"]
-    var flagEmoji = ["🏴‍☠️", "🏳️‍⚧️", "🏳️‍🌈", "🇸🇪", "🇨🇮", "🇹🇼", "🇭🇰", "🇮🇹", "🇺🇸"]
+    var foodEmoji = ["🍎", "🍌", "🍓", "🍋", "🍍", "🌶️", "🍊", "🥦", "🧅"]
+    var flagEmoji = ["🏴‍☠️", "🏳️‍⚧️", "🏳️‍🌈", "🇸🇪", "🇹🇼", "🇭🇰", "🇮🇹", "🇺🇸"]
     
     var body: some View {
         VStack{
@@ -109,7 +109,7 @@ struct ContentView: View {
 
 struct CardView : View {
         var content : String
-        @State var isFaceUp : Bool = true
+        @State var isFaceUp : Bool = false
         let shape = RoundedRectangle(cornerRadius: 20)
     var body: some View{
         ZStack{
@@ -122,8 +122,8 @@ struct CardView : View {
             }
         }
         .onAppear(){
-            if(!isFaceUp){
-                isFaceUp = true
+            if(isFaceUp){
+                isFaceUp = false
             }
         }
         .onTapGesture {
