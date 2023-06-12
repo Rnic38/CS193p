@@ -11,8 +11,8 @@ import SwiftUI
 struct CS193p_Assignment1App: App {
     var body: some Scene {
         WindowGroup {
-            //MemorizeView()
-            ContentView()
+            MemorizeView()
+            //ContentView()
         }
     }
 }

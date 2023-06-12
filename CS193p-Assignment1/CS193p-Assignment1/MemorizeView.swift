@@ -41,7 +41,7 @@
 //    
 //    var natureView : some View {
 //        ForEach(natureEmoji.shuffled(), id: \.self) { emoji in
-//            CardView(content: emoji)
+//            CardViewTest(content: emoji)
 //                .aspectRatio(2/3, contentMode: .fill)
 //        }
 //    }
@@ -65,7 +65,7 @@
 //    
 //    var foodView : some View {
 //        ForEach(foodEmoji, id: \.self) { emoji in
-//            CardView(content: emoji)
+//            CardViewTest(content: emoji)
 //                .aspectRatio(2/3, contentMode: .fill)
 //        }
 //    }
@@ -89,7 +89,7 @@
 //    
 //    var flagView : some View {
 //        ForEach(flagEmoji, id: \.self) { emoji in
-//            CardView(content: emoji)
+//            CardViewTest(content: emoji)
 //                .aspectRatio(2/3, contentMode: .fill)
 //        }
 //    }
